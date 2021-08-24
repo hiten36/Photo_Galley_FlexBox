@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition:all 0.3s ease;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    cursor: pointer;
+    overflow: hidden;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img p{
+    opacity: 0;
+    transform: scale(0);
+    width: 80%;
+    margin: auto;
+    left: 10%;
+    padding: 1rem;
+    background-color: rgb(63, 63, 63);
+    color: white;
+    position: absolute;
+    text-align: center;
+    bottom: 1rem;
+}
+.img1{
+    flex: 8;
+}
+.img1 > p{
+    opacity: 1;
+    transform: scale(1);
+}
+@media screen and (max-width:720px) {
+    .main{
+        flex-direction: column;
+    }
+}
